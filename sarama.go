@@ -72,7 +72,6 @@ package sarama
 import (
 	"io/ioutil"
 	"log"
-    "fmt"
 )
 
 var (
@@ -100,8 +99,8 @@ var (
 )
 
 // MON-3538 Proof Log
-init() {
-    fmt.Println("[TEST_MON-3538] Using Forked Sarama Version")
+func Mon3538() string {
+    return "[TEST_MON-3538] Using Forked Sarama Version"
 }
 
 // StdLogger is used to log error messages.

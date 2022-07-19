@@ -98,6 +98,12 @@ var (
 	MaxResponseSize int32 = 100 * 1024 * 1024
 )
 
+// MON-3538 Proof Log
+init() {
+    testLogger := StdLogger{}
+    testLogger.Println("[TEST_MON-3538] Using Forked Sarama Version")
+}
+
 // StdLogger is used to log error messages.
 type StdLogger interface {
 	Print(v ...interface{})
